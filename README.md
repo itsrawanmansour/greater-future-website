@@ -56,9 +56,6 @@ greater-future-website/
 2. Open `index.html` in any web browser — it redirects straight to the home page. (Or open `pages/Home.html` directly.)
 3. Navigate the site using the top navigation menu, which links to all pages.
 
-## Note
-The original files had a few image references with inconsistent capitalization (e.g., `SaudiGirl.jpg` referenced but the file was `SaudiGirl.JPG`), which would fail on case-sensitive hosting like GitHub Pages. These were corrected during reorganization so all pages load correctly on any platform.
-
 ## Author
 Rawan Mansour
 
