@@ -1,0 +1,296 @@
+body {
+    background: linear-gradient(to top, #3c0e54, #0e4854);
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4.5em;
+    color: white;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 3em;
+    color: white;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 2.0em;
+    color: white;
+    font-family: 'Georgia', serif;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.about {
+    font-size: 1.2em;
+    color: white;
+    text-align: left;
+    margin: 0 auto;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    margin-right: 20px;
+}
+
+img {
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.fixed-spacing {
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    line-height: 1.5;
+    white-space: pre-line;
+}
+
+.background1 {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    padding-right: 20px;
+    text-align: left;
+    width: 30%;
+}
+
+.left-section h1,
+.left-section h2,
+.left-section p {
+    margin: 0;
+    color: #008000;
+}
+
+.left-section h6 {
+    color: #82838C;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 27px;
+    margin-bottom: 0;
+}
+
+.left-section h1 {
+    font-family: 'Open Sans', sans-serif;
+    width: 350px;
+    font-size: 52px;
+    box-sizing: border-box;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: -1px;
+    margin-top: 0;
+}
+
+.left-section p {
+    color: #111013;
+    font-size: 1.125rem;
+    line-height: 1.875em;
+}
+
+.separator {
+    width: 1px;
+    background-color: #ccc;
+    height: auto;
+    margin: 0 20px;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.right-section .per-section {
+    padding: 20px;
+    border-radius: 8px;
+    width: 270px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.right-section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.right-section p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 40px;
+    width: 10px;
+    color: #008000;
+}
+
+.icon div {
+    direction: rtl;
+}
+
+.per-section h3 {
+    color: #111013;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.per-section p {
+    margin-top: 0.5rem;
+}
+
+.purple-icon {
+    color: #800080;
+}
+
+.yellow-icon {
+    color: #FFA500;
+}
+
+.orange-icon {
+    color: #FF6347;
+}
+
+.card {
+    position: relative;
+    width: 32%;
+    height: 400px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card a {
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+}
+
+.card1 {
+    background-image: url('https://riyadhexpo2030.sa/wp-content/uploads/2023/08/Riyadh-Expo-2030-Masterplan.jpg');
+}
+
+.card2 {
+    background-image: url('https://riyadhexpo2030.sa/wp-content/uploads/2023/06/Climate-Action.webp');
+}
+
+.card3 {
+    background-image: url('https://riyadhexpo2030.sa/wp-content/uploads/2023/08/Riyadh-Expo-2030-Prosperity-for-all-2-small.jpg');
+}
+
+.register-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #008000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register-link:hover {
+    background-color: #005700;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0e4854;
+    color: white;
+}
+
+.links {
+    padding: 50px 50px;
+    font-family: 'Georgia', serif;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.links li {
+    margin-right: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #ffd700;
+}

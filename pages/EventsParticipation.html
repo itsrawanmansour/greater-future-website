@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Events Participation</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/Project.css">
+    <link rel="icon" href="../assets/images/icon.png" type="image/png">
+
+    <style>
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            height: 50px;
+        }
+
+        textarea {
+            height: auto;
+            min-height: 80px;
+        }
+
+        button {
+            background-color: #3c0e54;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #ffd700;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Be Part of the Global Vision ! </h1>
+
+<nav class="links">
+    <ul>
+        <li><a href="Home.html"><b>Home</b></a> &nbsp;</li>
+        <li><a href="BigProjects.html"><b>Big Projects</b></a> &nbsp;</li>
+        <li><a href="Achievements.html"><b>Achievements</b></a> &nbsp;</li>
+        <li><a href="KingdomInTheLead.html"><b>Kingdom In The Lead</b></a> &nbsp;</li>
+        <li><a href="Stories.html"><b>Stories</b></a> &nbsp;</li>
+    </ul>
+</nav>
+
+    <br>
+
+    <form action="/submit" method="POST" onsubmit="return confirmSubmission()">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="event-role">Select Your Role in the Event</label>
+        <select id="event-role" name="event_role" required onchange="toggleProjectField()">
+            <option value="">-- Select a Role --</option>
+            <option value="presenter">Project Presenter</option>
+            <option value="organizer">Organizer</option>
+            <option value="content-creator">Content Creator to Document the Event</option>
+            <option value="photographer">Photographer</option>
+        </select>
+        <div id="project-field">
+            <label for="project-name">What is the Project?</label>
+            <textarea id="project-name" name="project_name" rows="1" placeholder="Describe your project"></textarea>
+        </div>
+        <label for="message">Why do you want to participate in this role?</label>
+        <textarea id="message" name="message" rows="3" placeholder="Tell us why you're interested in this role"
+            required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+
+ <h3 style="text-align: center;">We believe that every voice matters! By participating, you will contribute to shaping future events and maximizing benefits for everyone.</h3>
+
+    <footer>
+        <p>&copy; 2024 Future Events. All rights reserved.</p>
+    </footer>
+    
+    <script>
+
+function toggleProjectField() {
+            const role = document.getElementById("event-role").value;
+            const projectField = document.getElementById("project-field");
+
+            // إذا كان الدور هو "presenter" سيتم إظهار الحقل، وإلا سيتم إخفاؤه
+            if (role === "presenter") {
+                projectField.style.display = "block";
+            } else {
+                projectField.style.display = "none";
+            }
+        }        
+        function confirmSubmission() {
+            var confirmed = confirm("Are you sure you want to submit the form?");
+            if (confirmed) {
+                window.location.href = "Submission.html";
+            }
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>

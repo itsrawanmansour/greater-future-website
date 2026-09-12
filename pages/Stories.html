@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SuccessStories</title>
+    <link rel="stylesheet" href="../assets/css/Project.css">
+    <link rel="icon" href="../assets/images/icon.png" type="image/png">
+
+    <style>
+
+        @keyframes slide {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            51% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+                   
+        .highlight {
+            padding: 10px;
+      margin: 10px 0;
+        }
+
+        .intro {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555; 
+        }
+
+.content {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s ease;
+}
+
+    .read-more {
+        color: #ffe4e1;
+        cursor: pointer;
+        text-decoration: underline;
+        display: inline-block;
+    }
+
+        .contact-form button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+            
+.email {
+            font-size: 1.5em;
+            font-weight: bold; 
+            color: #ffe4e1; 
+            margin: 10px 0; 
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header> 
+
+    <h1>The power of youth</h1>
+</header> 
+    
+<nav class="links">
+    <ul>
+        <li><a href="Home.html"><b>Home</b></a> &nbsp;</li>
+        <li><a href="BigProjects.html"><b>Big Projects</b></a> &nbsp;</li>
+        <li><a href="Achievements.html"><b>Achievements</b></a> &nbsp;</li>
+        <li><a href="KingdomInTheLead.html"><b>Kingdom In The Lead</b></a> &nbsp;</li>
+        <li><a href="EventsParticipation.html"><b>Expo 2030 Participation</b></a> &nbsp;</li>
+    </ul>
+</nav>
+
+ <p class="fixed-spacing"> With the development of the Kingdom of Saudi Arabia, the youth are making significant strides in brand innovation and achieving inspiring entrepreneurial goals. Those under thirty represent the largest demographic, bringing new ideas and initiatives that enhance creativity and energy throughout the Kingdom.
+
+The digital world has gained prominence since the COVID-19 pandemic, but Saudi innovators have long relied on it to build their success. These young creators are the new driving force in the Kingdom, inspiring content creators and ambitious entrepreneurs worldwide.
+    </p>
+
+<br>
+
+<div class="about">
+    <div class="image-container">
+    <img src="../assets/images/SaudiGirl.JPG" alt="Saudi Girl Creativity generation">
+    </div>
+    <div>
+
+    <h3>Raoum Al-Suhaibani</h3>
+ <p>A Saudi girl shares her lifestyle on her YouTube channel, “Sukkari Life.” As a certified yoga instructor, Raoum offers vegan recipes and travel itineraries, giving a delicious “vegan” taste of Saudi life.</p>
+
+<div id="fullContent1" class="content" style="max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;">
+    <p>Rohum (which means "the kindness of a mother") gives a sense of hope to Saudi vegans. She roams the Saudi markets in search of plant-based and organic ingredients to prepare delicious vegetarian meals. She also promotes traditional Saudi dishes, which is perfect for those wanting to experience local cuisine!</p>
+    <p>Rohum supports a healthy lifestyle by practicing yoga, providing plenty of inspiration to get up and do some yoga exercises. She shares video blogs ("vlogs") when she goes on adventures around the Kingdom or travels the world with her family and friends.</p>
+    <p>Since 2009, Rohum has been sharing content on YouTube, offering the world a glimpse into Saudi life. She shares ideas and wonderful insights into what life is like for Saudi women, reaching over 13 million viewers. Additionally, Rohum established her own online store named 
+    <a href="https://www.youtube.com/channel/UCLQP06NOgXs3vHxSyPxJ9OA" target="_blank">"Sukkari Store"</a>, where she focuses on providing eco-friendly products. She offers a forward-looking vision that allows outsiders to explore Saudi life while enabling locals to broaden their horizons.</p>
+</div>
+<p class="read-more" id="toggleButton1" onclick="toggleContent1()">read more</p>
+
+<script>
+    function toggleContent1() {
+        const content1 = document.getElementById('fullContent1');
+        const toggleButton1 = document.getElementById('toggleButton1');
+        
+        if (content1.style.maxHeight) {
+            content1.style.maxHeight = null;
+            toggleButton1.textContent = "read more";
+        } else {
+            content1.style.maxHeight = content1.scrollHeight + "px";
+            toggleButton1.textContent = "Read less";
+        }
+    }
+</script>
+
+
+
+<h3>Fatima Al-Banawi</h3>
+<p>Fatima Al-Banawi, who sought stories in her city of Jeddah, is the founder of "The Other Story Project." Al-Banawi began her project for the first time through her journey of collecting real stories from people.</p>
+
+<div id="fullContent2" class="content" style="max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;">
+    <p>Driven by her passion for writing, she set up kiosks on the streets that contained blank sheets of paper and pens, allowing people to write their stories anonymously. She later delved into these stories to create deep conversations, transforming one-page tales into performance pieces that she shared on Instagram. Through "The Other Story Project," she gathered 5,000 real stories from strangers and turned many of these narratives into produced works like "A Blink of an Eye."</p>
+    <p>With a heavy reliance on social media as a creative platform to expand her work and share images, Al-Banawi has a unique perspective on how to use it. She employs her writing and creative directing to transform real stories into captivating films and inspiring posts. Through these anonymous stories, "The Other Story Project" began with a woman and later evolved into an important and engaging channel for storytelling that resonates with everyone.</p>
+</div>
+<p class="read-more" id="toggleButton2" onclick="toggleContent2()">read more</p>
+
+<script>
+    function toggleContent2() {
+        const content2 = document.getElementById('fullContent2');
+        const toggleButton2 = document.getElementById('toggleButton2');
+        
+        if (content2.style.maxHeight) {
+            content2.style.maxHeight = null;
+            toggleButton2.textContent = "read more";
+        } else {
+            content2.style.maxHeight = content2.scrollHeight + "px";
+            toggleButton2.textContent = "Read less";
+        }
+    }
+</script>
+
+<header>
+    <h1>Share Your Story</h1>
+</header>
+
+<section>
+    <div class="contact-info">
+        <p>
+            <i>If you have an experience you would like to share with us, you are welcome to receive it via the following email:</i>
+        </p>
+        
+        <p class="email" style="font-size: 1.5em; font-weight: bold; margin: 10px 0;">
+            <a href="mailto:shareyourstory@yourwebsite.com" style="color: #ffe4e1; text-decoration: none;">shareyourstory@yourwebsite.com</a>
+        </p>
+        
+        <p style="margin-top: 10px;">We look forward to hearing your wonderful stories.</p>
+    </div>
+</section>
+
+</body>
+
+</html>  
+
+
+
+                                                                                                                                                                                                                                                                      
+
+
+
