@@ -1,4 +1,4 @@
-🇸🇦 Towards a Greater Future
+# 🌴Towards a Greater Future
 A static multi-page website built with HTML5 and CSS3, showcasing Saudi Arabia's Vision 2030 milestones and major national projects — from NEOM and the Red Sea Project to hosting the World Cup 2034. Built as a Web Development course project.
 
 🔗 **Live Demo:** [itsrawanmansour.github.io/greater-future-website](https://itsrawanmansour.github.io/greater-future-website/)
